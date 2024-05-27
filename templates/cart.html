@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Your Cart - Grocery Delivery{% endblock %}
+
+{% block content %}
+<section class="cart">
+  <h2>Your Shopping Cart</h2>
+  <ul>
+    {% for item in cart %}
+    <li>{{ item.name }} - ${{ item.price }}</li>
+    {% endfor %}
+  </ul>
+  <a href="{{ url_for('checkout') }}">Checkout</a>
+</section>
+{% endblock %}

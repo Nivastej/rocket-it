@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Grocery Delivery{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1>Fresh Groceries Delivered to Your Doorstep</h1>
+</section>
+
+<section class="products">
+  <h2>Featured Products</h2>
+  <div class="product-list">
+    {% for product in products %}
+    <div class="product-item">
+      <img src="{{ url_for('static', filename='images/' ~ product.image) }}" alt="{{ product.name }}">
+      <h3>{{ product.name }}</h3>
+      <p>${{ product.price }}</p>
+      <a href="{{ url_for('product', product_id=product.id) }}">View</a>
+      <a href="{{ url_for('add_to_cart', product_id=product.id) }}">Add to Cart</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
