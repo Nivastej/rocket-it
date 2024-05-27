@@ -5,13 +5,13 @@ app.secret_key = 'supersecretkey'
 
 
 products = [
-    {
+    {        
         'id': 1,
         'name': 'Apple',
         'price': 0.5,
         'image': 'apple.jpg'
     },
-    {
+    {  
         'id': 2,
         'name': 'Banana',
         'price': 0.3,
