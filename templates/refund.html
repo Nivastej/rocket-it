@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refund Page</title>
+<style>
+  /* Global styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #333;
+    background-color: #f8f8f8;
+    background-image: url('https://image.freepik.com/free-photo/assorted-fruits-vegetables-white-background_53876-20692.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px 0;
+  }
+  p {
+    margin: 10px 0;
+  }
+  .section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .refund-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.3s;
+    background: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  .refund-card:hover {
+    transform: translateY(-5px);
+  }
+  .refund-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .refund-info {
+    margin-bottom: 20px;
+  }
+  .refund-info p {
+    font-size: 1.2em;
+  }
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="section refund">
+    <div class="refund-card">
+      <img class="refund-img" src="https://image.freepik.com/free-photo/variety-groceries_53876-89516.jpg" alt="Refund Image">
+      <div class="refund-info">
+        <h2>Refund Policy</h2>
+        <p>If you are not satisfied with your purchase, you can request a refund within 30 days of the purchase date.</p>
+        <p>Please ensure the product is unused and in its original packaging.</p>
+        <p>Refunds will be processed within 5-7 business days after the return is received.</p>
+        <!-- Link to refund status page -->
+        <a href="refund-status.html" class="btn" target="_blank">Check Refund Status</a>
+      </div>
+      <!-- Link to request refund page -->
+      <a href="request-refund.html" class="btn" target="_blank">Request Refund</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2024 GroceryShop. All rights reserved.
+</footer>
+
+</body>
+</html>
+
